@@ -1,0 +1,22 @@
+syntax="proto3";
+option java_package="ma.elma_dev.stubs";
+service bankServices{
+  rpc convert(messageReq) returns(messageResp); //unary module
+  rpc getCurrencyStream(messageReq) returns(stream messageResp);//server stream module
+  rpc perfomCurrencyStream(stream messageReq) returns(messageResp);//sclient stream module
+  rpc fullCurrencyStream(stream messageReq) returns(stream messageResp);//Bi_Directional
+}
+
+message messageReq{
+  string messageFrom=1;
+  string messageTo=2;
+  double amount=3;
+}
+
+message messageResp{
+  string messageFrom=1;
+  string messgaeTo=2;
+  double amount=3;
+  double result=4;
+
+}
