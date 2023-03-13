@@ -2,10 +2,10 @@ package dev.elma.clients;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import ma.elma_dev.stubs.BankServices;
-import ma.elma_dev.stubs.bankServicesGrpc;
+import dev.elma.stubs.BankServices;
+import dev.elma.stubs.bankServicesGrpc;
 
-public class ClientGrpc {
+public class ClientGrpcUnary {
     public static void main(String[] args) {
         //create connection with server
         ManagedChannel localhost = ManagedChannelBuilder.forAddress("localhost", 2001).usePlaintext().build();
@@ -16,6 +16,7 @@ public class ClientGrpc {
                 setMessageFrom("MAD").setMessageTo("$").setAmount(200).build();
         //create resp msg
         BankServices.messageResp messageResp=bankServicesBlockingStub.convert(messageReq);
+
 
         //show the response
         System.out.println(messageResp);

@@ -1,4 +1,4 @@
-package ma.elma_dev.stubs;
+package dev.elma.stubs;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -27,30 +27,30 @@ public final class bankServicesGrpc {
   public static final String SERVICE_NAME = "bankServices";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<ma.elma_dev.stubs.BankServices.messageReq,
-      ma.elma_dev.stubs.BankServices.messageResp> getConvertMethod;
+  private static volatile io.grpc.MethodDescriptor<BankServices.messageReq,
+          BankServices.messageResp> getConvertMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "convert",
-      requestType = ma.elma_dev.stubs.BankServices.messageReq.class,
-      responseType = ma.elma_dev.stubs.BankServices.messageResp.class,
+      requestType = BankServices.messageReq.class,
+      responseType = BankServices.messageResp.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<ma.elma_dev.stubs.BankServices.messageReq,
-      ma.elma_dev.stubs.BankServices.messageResp> getConvertMethod() {
-    io.grpc.MethodDescriptor<ma.elma_dev.stubs.BankServices.messageReq, ma.elma_dev.stubs.BankServices.messageResp> getConvertMethod;
+  public static io.grpc.MethodDescriptor<BankServices.messageReq,
+          BankServices.messageResp> getConvertMethod() {
+    io.grpc.MethodDescriptor<BankServices.messageReq, BankServices.messageResp> getConvertMethod;
     if ((getConvertMethod = bankServicesGrpc.getConvertMethod) == null) {
       synchronized (bankServicesGrpc.class) {
         if ((getConvertMethod = bankServicesGrpc.getConvertMethod) == null) {
           bankServicesGrpc.getConvertMethod = getConvertMethod = 
-              io.grpc.MethodDescriptor.<ma.elma_dev.stubs.BankServices.messageReq, ma.elma_dev.stubs.BankServices.messageResp>newBuilder()
+              io.grpc.MethodDescriptor.<BankServices.messageReq, BankServices.messageResp>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "bankServices", "convert"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  ma.elma_dev.stubs.BankServices.messageReq.getDefaultInstance()))
+                  BankServices.messageReq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  ma.elma_dev.stubs.BankServices.messageResp.getDefaultInstance()))
+                  BankServices.messageResp.getDefaultInstance()))
                   .setSchemaDescriptor(new bankServicesMethodDescriptorSupplier("convert"))
                   .build();
           }
@@ -59,30 +59,30 @@ public final class bankServicesGrpc {
      return getConvertMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<ma.elma_dev.stubs.BankServices.messageReq,
-      ma.elma_dev.stubs.BankServices.messageResp> getGetCurrencyStreamMethod;
+  private static volatile io.grpc.MethodDescriptor<BankServices.messageReq,
+          BankServices.messageResp> getGetCurrencyStreamMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "getCurrencyStream",
-      requestType = ma.elma_dev.stubs.BankServices.messageReq.class,
-      responseType = ma.elma_dev.stubs.BankServices.messageResp.class,
+      requestType = BankServices.messageReq.class,
+      responseType = BankServices.messageResp.class,
       methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<ma.elma_dev.stubs.BankServices.messageReq,
-      ma.elma_dev.stubs.BankServices.messageResp> getGetCurrencyStreamMethod() {
-    io.grpc.MethodDescriptor<ma.elma_dev.stubs.BankServices.messageReq, ma.elma_dev.stubs.BankServices.messageResp> getGetCurrencyStreamMethod;
+  public static io.grpc.MethodDescriptor<BankServices.messageReq,
+          BankServices.messageResp> getGetCurrencyStreamMethod() {
+    io.grpc.MethodDescriptor<BankServices.messageReq, BankServices.messageResp> getGetCurrencyStreamMethod;
     if ((getGetCurrencyStreamMethod = bankServicesGrpc.getGetCurrencyStreamMethod) == null) {
       synchronized (bankServicesGrpc.class) {
         if ((getGetCurrencyStreamMethod = bankServicesGrpc.getGetCurrencyStreamMethod) == null) {
           bankServicesGrpc.getGetCurrencyStreamMethod = getGetCurrencyStreamMethod = 
-              io.grpc.MethodDescriptor.<ma.elma_dev.stubs.BankServices.messageReq, ma.elma_dev.stubs.BankServices.messageResp>newBuilder()
+              io.grpc.MethodDescriptor.<BankServices.messageReq, BankServices.messageResp>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(
                   "bankServices", "getCurrencyStream"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  ma.elma_dev.stubs.BankServices.messageReq.getDefaultInstance()))
+                  BankServices.messageReq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  ma.elma_dev.stubs.BankServices.messageResp.getDefaultInstance()))
+                  BankServices.messageResp.getDefaultInstance()))
                   .setSchemaDescriptor(new bankServicesMethodDescriptorSupplier("getCurrencyStream"))
                   .build();
           }
@@ -91,30 +91,30 @@ public final class bankServicesGrpc {
      return getGetCurrencyStreamMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<ma.elma_dev.stubs.BankServices.messageReq,
-      ma.elma_dev.stubs.BankServices.messageResp> getPerfomCurrencyStreamMethod;
+  private static volatile io.grpc.MethodDescriptor<BankServices.messageReq,
+          BankServices.messageResp> getPerfomCurrencyStreamMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "perfomCurrencyStream",
-      requestType = ma.elma_dev.stubs.BankServices.messageReq.class,
-      responseType = ma.elma_dev.stubs.BankServices.messageResp.class,
+      requestType = BankServices.messageReq.class,
+      responseType = BankServices.messageResp.class,
       methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
-  public static io.grpc.MethodDescriptor<ma.elma_dev.stubs.BankServices.messageReq,
-      ma.elma_dev.stubs.BankServices.messageResp> getPerfomCurrencyStreamMethod() {
-    io.grpc.MethodDescriptor<ma.elma_dev.stubs.BankServices.messageReq, ma.elma_dev.stubs.BankServices.messageResp> getPerfomCurrencyStreamMethod;
+  public static io.grpc.MethodDescriptor<BankServices.messageReq,
+          BankServices.messageResp> getPerfomCurrencyStreamMethod() {
+    io.grpc.MethodDescriptor<BankServices.messageReq, BankServices.messageResp> getPerfomCurrencyStreamMethod;
     if ((getPerfomCurrencyStreamMethod = bankServicesGrpc.getPerfomCurrencyStreamMethod) == null) {
       synchronized (bankServicesGrpc.class) {
         if ((getPerfomCurrencyStreamMethod = bankServicesGrpc.getPerfomCurrencyStreamMethod) == null) {
           bankServicesGrpc.getPerfomCurrencyStreamMethod = getPerfomCurrencyStreamMethod = 
-              io.grpc.MethodDescriptor.<ma.elma_dev.stubs.BankServices.messageReq, ma.elma_dev.stubs.BankServices.messageResp>newBuilder()
+              io.grpc.MethodDescriptor.<BankServices.messageReq, BankServices.messageResp>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
               .setFullMethodName(generateFullMethodName(
                   "bankServices", "perfomCurrencyStream"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  ma.elma_dev.stubs.BankServices.messageReq.getDefaultInstance()))
+                  BankServices.messageReq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  ma.elma_dev.stubs.BankServices.messageResp.getDefaultInstance()))
+                  BankServices.messageResp.getDefaultInstance()))
                   .setSchemaDescriptor(new bankServicesMethodDescriptorSupplier("perfomCurrencyStream"))
                   .build();
           }
@@ -123,30 +123,30 @@ public final class bankServicesGrpc {
      return getPerfomCurrencyStreamMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<ma.elma_dev.stubs.BankServices.messageReq,
-      ma.elma_dev.stubs.BankServices.messageResp> getFullCurrencyStreamMethod;
+  private static volatile io.grpc.MethodDescriptor<BankServices.messageReq,
+          BankServices.messageResp> getFullCurrencyStreamMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "fullCurrencyStream",
-      requestType = ma.elma_dev.stubs.BankServices.messageReq.class,
-      responseType = ma.elma_dev.stubs.BankServices.messageResp.class,
+      requestType = BankServices.messageReq.class,
+      responseType = BankServices.messageResp.class,
       methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<ma.elma_dev.stubs.BankServices.messageReq,
-      ma.elma_dev.stubs.BankServices.messageResp> getFullCurrencyStreamMethod() {
-    io.grpc.MethodDescriptor<ma.elma_dev.stubs.BankServices.messageReq, ma.elma_dev.stubs.BankServices.messageResp> getFullCurrencyStreamMethod;
+  public static io.grpc.MethodDescriptor<BankServices.messageReq,
+          BankServices.messageResp> getFullCurrencyStreamMethod() {
+    io.grpc.MethodDescriptor<BankServices.messageReq, BankServices.messageResp> getFullCurrencyStreamMethod;
     if ((getFullCurrencyStreamMethod = bankServicesGrpc.getFullCurrencyStreamMethod) == null) {
       synchronized (bankServicesGrpc.class) {
         if ((getFullCurrencyStreamMethod = bankServicesGrpc.getFullCurrencyStreamMethod) == null) {
           bankServicesGrpc.getFullCurrencyStreamMethod = getFullCurrencyStreamMethod = 
-              io.grpc.MethodDescriptor.<ma.elma_dev.stubs.BankServices.messageReq, ma.elma_dev.stubs.BankServices.messageResp>newBuilder()
+              io.grpc.MethodDescriptor.<BankServices.messageReq, BankServices.messageResp>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(
                   "bankServices", "fullCurrencyStream"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  ma.elma_dev.stubs.BankServices.messageReq.getDefaultInstance()))
+                  BankServices.messageReq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  ma.elma_dev.stubs.BankServices.messageResp.getDefaultInstance()))
+                  BankServices.messageResp.getDefaultInstance()))
                   .setSchemaDescriptor(new bankServicesMethodDescriptorSupplier("fullCurrencyStream"))
                   .build();
           }
@@ -187,8 +187,8 @@ public final class bankServicesGrpc {
      *unary module
      * </pre>
      */
-    public void convert(ma.elma_dev.stubs.BankServices.messageReq request,
-        io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageResp> responseObserver) {
+    public void convert(BankServices.messageReq request,
+                        io.grpc.stub.StreamObserver<BankServices.messageResp> responseObserver) {
       asyncUnimplementedUnaryCall(getConvertMethod(), responseObserver);
     }
 
@@ -197,8 +197,8 @@ public final class bankServicesGrpc {
      *server stream module
      * </pre>
      */
-    public void getCurrencyStream(ma.elma_dev.stubs.BankServices.messageReq request,
-        io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageResp> responseObserver) {
+    public void getCurrencyStream(BankServices.messageReq request,
+                                  io.grpc.stub.StreamObserver<BankServices.messageResp> responseObserver) {
       asyncUnimplementedUnaryCall(getGetCurrencyStreamMethod(), responseObserver);
     }
 
@@ -207,8 +207,8 @@ public final class bankServicesGrpc {
      *sclient stream module
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageReq> perfomCurrencyStream(
-        io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageResp> responseObserver) {
+    public io.grpc.stub.StreamObserver<BankServices.messageReq> perfomCurrencyStream(
+        io.grpc.stub.StreamObserver<BankServices.messageResp> responseObserver) {
       return asyncUnimplementedStreamingCall(getPerfomCurrencyStreamMethod(), responseObserver);
     }
 
@@ -217,8 +217,8 @@ public final class bankServicesGrpc {
      *Bi_Directional
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageReq> fullCurrencyStream(
-        io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageResp> responseObserver) {
+    public io.grpc.stub.StreamObserver<BankServices.messageReq> fullCurrencyStream(
+        io.grpc.stub.StreamObserver<BankServices.messageResp> responseObserver) {
       return asyncUnimplementedStreamingCall(getFullCurrencyStreamMethod(), responseObserver);
     }
 
@@ -228,29 +228,29 @@ public final class bankServicesGrpc {
             getConvertMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                ma.elma_dev.stubs.BankServices.messageReq,
-                ma.elma_dev.stubs.BankServices.messageResp>(
+                      BankServices.messageReq,
+                      BankServices.messageResp>(
                   this, METHODID_CONVERT)))
           .addMethod(
             getGetCurrencyStreamMethod(),
             asyncServerStreamingCall(
               new MethodHandlers<
-                ma.elma_dev.stubs.BankServices.messageReq,
-                ma.elma_dev.stubs.BankServices.messageResp>(
+                      BankServices.messageReq,
+                      BankServices.messageResp>(
                   this, METHODID_GET_CURRENCY_STREAM)))
           .addMethod(
             getPerfomCurrencyStreamMethod(),
             asyncClientStreamingCall(
               new MethodHandlers<
-                ma.elma_dev.stubs.BankServices.messageReq,
-                ma.elma_dev.stubs.BankServices.messageResp>(
+                      BankServices.messageReq,
+                      BankServices.messageResp>(
                   this, METHODID_PERFOM_CURRENCY_STREAM)))
           .addMethod(
             getFullCurrencyStreamMethod(),
             asyncBidiStreamingCall(
               new MethodHandlers<
-                ma.elma_dev.stubs.BankServices.messageReq,
-                ma.elma_dev.stubs.BankServices.messageResp>(
+                      BankServices.messageReq,
+                      BankServices.messageResp>(
                   this, METHODID_FULL_CURRENCY_STREAM)))
           .build();
     }
@@ -279,8 +279,8 @@ public final class bankServicesGrpc {
      *unary module
      * </pre>
      */
-    public void convert(ma.elma_dev.stubs.BankServices.messageReq request,
-        io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageResp> responseObserver) {
+    public void convert(BankServices.messageReq request,
+                        io.grpc.stub.StreamObserver<BankServices.messageResp> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getConvertMethod(), getCallOptions()), request, responseObserver);
     }
@@ -290,8 +290,8 @@ public final class bankServicesGrpc {
      *server stream module
      * </pre>
      */
-    public void getCurrencyStream(ma.elma_dev.stubs.BankServices.messageReq request,
-        io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageResp> responseObserver) {
+    public void getCurrencyStream(BankServices.messageReq request,
+                                  io.grpc.stub.StreamObserver<BankServices.messageResp> responseObserver) {
       asyncServerStreamingCall(
           getChannel().newCall(getGetCurrencyStreamMethod(), getCallOptions()), request, responseObserver);
     }
@@ -301,8 +301,8 @@ public final class bankServicesGrpc {
      *sclient stream module
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageReq> perfomCurrencyStream(
-        io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageResp> responseObserver) {
+    public io.grpc.stub.StreamObserver<BankServices.messageReq> perfomCurrencyStream(
+        io.grpc.stub.StreamObserver<BankServices.messageResp> responseObserver) {
       return asyncClientStreamingCall(
           getChannel().newCall(getPerfomCurrencyStreamMethod(), getCallOptions()), responseObserver);
     }
@@ -312,8 +312,8 @@ public final class bankServicesGrpc {
      *Bi_Directional
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageReq> fullCurrencyStream(
-        io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageResp> responseObserver) {
+    public io.grpc.stub.StreamObserver<BankServices.messageReq> fullCurrencyStream(
+        io.grpc.stub.StreamObserver<BankServices.messageResp> responseObserver) {
       return asyncBidiStreamingCall(
           getChannel().newCall(getFullCurrencyStreamMethod(), getCallOptions()), responseObserver);
     }
@@ -342,7 +342,7 @@ public final class bankServicesGrpc {
      *unary module
      * </pre>
      */
-    public ma.elma_dev.stubs.BankServices.messageResp convert(ma.elma_dev.stubs.BankServices.messageReq request) {
+    public BankServices.messageResp convert(BankServices.messageReq request) {
       return blockingUnaryCall(
           getChannel(), getConvertMethod(), getCallOptions(), request);
     }
@@ -352,8 +352,8 @@ public final class bankServicesGrpc {
      *server stream module
      * </pre>
      */
-    public java.util.Iterator<ma.elma_dev.stubs.BankServices.messageResp> getCurrencyStream(
-        ma.elma_dev.stubs.BankServices.messageReq request) {
+    public java.util.Iterator<BankServices.messageResp> getCurrencyStream(
+        BankServices.messageReq request) {
       return blockingServerStreamingCall(
           getChannel(), getGetCurrencyStreamMethod(), getCallOptions(), request);
     }
@@ -382,8 +382,8 @@ public final class bankServicesGrpc {
      *unary module
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<ma.elma_dev.stubs.BankServices.messageResp> convert(
-        ma.elma_dev.stubs.BankServices.messageReq request) {
+    public com.google.common.util.concurrent.ListenableFuture<BankServices.messageResp> convert(
+        BankServices.messageReq request) {
       return futureUnaryCall(
           getChannel().newCall(getConvertMethod(), getCallOptions()), request);
     }
@@ -412,12 +412,12 @@ public final class bankServicesGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CONVERT:
-          serviceImpl.convert((ma.elma_dev.stubs.BankServices.messageReq) request,
-              (io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageResp>) responseObserver);
+          serviceImpl.convert((BankServices.messageReq) request,
+              (io.grpc.stub.StreamObserver<BankServices.messageResp>) responseObserver);
           break;
         case METHODID_GET_CURRENCY_STREAM:
-          serviceImpl.getCurrencyStream((ma.elma_dev.stubs.BankServices.messageReq) request,
-              (io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageResp>) responseObserver);
+          serviceImpl.getCurrencyStream((BankServices.messageReq) request,
+              (io.grpc.stub.StreamObserver<BankServices.messageResp>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -431,10 +431,10 @@ public final class bankServicesGrpc {
       switch (methodId) {
         case METHODID_PERFOM_CURRENCY_STREAM:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.perfomCurrencyStream(
-              (io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageResp>) responseObserver);
+              (io.grpc.stub.StreamObserver<BankServices.messageResp>) responseObserver);
         case METHODID_FULL_CURRENCY_STREAM:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.fullCurrencyStream(
-              (io.grpc.stub.StreamObserver<ma.elma_dev.stubs.BankServices.messageResp>) responseObserver);
+              (io.grpc.stub.StreamObserver<BankServices.messageResp>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -447,7 +447,7 @@ public final class bankServicesGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return ma.elma_dev.stubs.BankServices.getDescriptor();
+      return BankServices.getDescriptor();
     }
 
     @java.lang.Override
