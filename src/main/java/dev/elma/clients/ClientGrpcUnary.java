@@ -17,7 +17,6 @@ public class ClientGrpcUnary {
         //create resp msg
         BankServices.messageResp messageResp=bankServicesBlockingStub.convert(messageReq);
 
-
         //show the response
         System.out.println(messageResp);
 
