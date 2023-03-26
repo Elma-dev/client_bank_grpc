@@ -5,15 +5,14 @@ import dev.elma.stubs.bankServicesGrpc;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
-
 import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class ClientBiDirectionalStream{
     public static void main(String[] args) throws IOException {
-        ManagedChannel localhost = ManagedChannelBuilder.forAddress("localhost", 2001).usePlaintext().build();
-        bankServicesGrpc.bankServicesStub bankServicesStub = bankServicesGrpc.newStub(localhost);
+        ManagedChannel localhost = ManagedChannelBuilder.forAddress("localhost", 2001).usePlaintext().build();//Channel with server
+        bankServicesGrpc.bankServicesStub bankServicesStub = bankServicesGrpc.newStub(localhost);//Stubs
 
         StreamObserver<BankServices.messageReq> messageReqStreamObserver = bankServicesStub.fullCurrencyStream(new StreamObserver<BankServices.messageResp>() {
             @Override

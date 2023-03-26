@@ -4,9 +4,7 @@ import dev.elma.stubs.BankServices;
 import dev.elma.stubs.bankServicesGrpc;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import io.grpc.ServerBuilder;
 import io.grpc.stub.StreamObserver;
-
 import java.io.IOException;
 
 public class ClientGrpcSStream {
@@ -25,12 +23,10 @@ public class ClientGrpcSStream {
             public void onNext(BankServices.messageResp messageResp) {
                 System.out.println(messageResp.toString());
             }
-
             @Override
             public void onError(Throwable throwable) {
 
             }
-
             @Override
             public void onCompleted() {
                 System.out.println("The Last One...");

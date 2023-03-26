@@ -20,12 +20,10 @@ public class ClientGrpcCS {
             public void onNext(BankServices.messageResp messageResp) {
                 System.out.println("Response of server is: "+messageResp.getResult());
             }
-
             @Override
             public void onError(Throwable throwable) {
 
             }
-
             @Override
             public void onCompleted() {
                 //System.out.println("The last One...");
